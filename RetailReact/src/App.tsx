@@ -1,9 +1,13 @@
 import React from 'react'
 import Wrapper from './components/Wrapper'
+import "@/configs/axios"
 const App = () => {
 
   return (
+    <>
+
     <Wrapper/>
+    </>
   )
 }
 

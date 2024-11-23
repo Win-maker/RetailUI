@@ -1,11 +1,11 @@
-import { useQuery,type UseQueryOptions,} from "@tanstack/react-query";
+import { useQuery,} from "@tanstack/react-query";
 
 import axios from "axios";
 
-import { ProductType } from "../../shared/types";
-
 export const getAllProduct = {
     useQuery: () => {
+
+        console.log("Got axios",axios)
       return useQuery({
         queryKey: ["AllProducts"],
         queryFn: async () => {

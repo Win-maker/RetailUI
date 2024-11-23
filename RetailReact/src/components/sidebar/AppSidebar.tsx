@@ -40,7 +40,7 @@ const items = [
 ]
 const AppSidebar = () => {
   return (
-    <Sidebar>
+    <Sidebar className="mt-[70px]">
       <SidebarContent className=" bg-sky-100/80 backdrop-blur-lg shadow-lg">
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
