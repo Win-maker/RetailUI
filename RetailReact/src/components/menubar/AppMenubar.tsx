@@ -3,7 +3,7 @@ import logo from '../../assets/imgs/logo.png'; // Your logo
 const AppMenubar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Toggle dark mode
+
 
   return (
     <div className={`bg-sky-100/80 backdrop-blur-lg shadow-lg dark:bg-gray-900 text-black dark:text-white p-4 fixed w-full top-0 left-0 z-10`}>

@@ -1,17 +1,15 @@
 import ProductCard from "../../components/ViewItems/ProductCard"
-import api from "../../api"
+import { useProducts } from "../../hooks/getAllProducts"
 
 const ViewItems = () => {
 
 
-  const { data:products=[], isError, isLoading}= api.products.getAllProduct.useQuery()
+  const { products, isError, isLoading } = useProducts();
 
+  if (isLoading) return <p>Loading...</p>;
 
+  if (isError) return <p>Error while loading products.</p>;
 
-if (isLoading) return <p>Loading...</p>;
-
-
-if (isError) return <p>Error while loading products.</p>;
 
   return (
     <>

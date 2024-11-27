@@ -2,14 +2,14 @@ import { useQuery,} from "@tanstack/react-query";
 
 import axios from "axios";
 
-export const getAllProduct = {
+export const getAllSaleReport = {
     useQuery: () => {
 
       return useQuery({
-        queryKey: ["AllProducts"],
+        queryKey: ["AllSaleReport"],
         queryFn: async () => {
           try {
-            const response = await axios.get('AllProducts');
+            const response = await axios.get('GetAllSaleInformation');
             console.log("API Response:", response.data);
             if (!Array.isArray(response.data)) {
               throw new Error("Unexpected API response format. Expected an array.");
